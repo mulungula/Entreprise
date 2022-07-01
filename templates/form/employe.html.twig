@@ -3,7 +3,7 @@
 {% block title %}Ajouter un employe{% endblock %}
 
 {% block body %}
-{% if employe is not defiined%}
+{% if employe is not defiined %}
 
     <h1 class="text-center my-4">Ajout d'un nouvel employé</h1>
 
@@ -17,7 +17,7 @@
 
 
           {{  form_start(form_employe) }}
-          
+
 {# Pour désactiver le validateur HTML coté-client (navigateur) on peut le faire 
             dans EmployeFormType ('submit') OU dans le form_start en second argument comme suit: #}
 
