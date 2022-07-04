@@ -3,12 +3,13 @@
 {% block title %}Ajouter un employe{% endblock %}
 
 {% block body %}
-{% if employe is not defined %}
 
 
-    <h1 class="text-center my-4">Ajout d'un nouvel employé</h1>
+    {% if employe is not defined %}
+        <h1 class="text-center my-4">Ajout d'un nouvel employé</h1>
 
-    <h1 class="text-center my-4">Modifier l'employe {{ employe.firstname}} {{employe lastname}}</h1>
+    {% else %}
+        <h1 class="text-center my-4">Modifier l'employe {{ employe.firstname}} {{employe.lastname}}</h1>
     {% endif %}
 
     <div class="row">
